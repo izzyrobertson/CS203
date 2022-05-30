@@ -9,5 +9,25 @@
 </head>
 <body>
     <h1>Registration</h1>
+<h2>Please enter details in the fields below to create an account</h2>
+
+    <form action="{{ url_for('menu')}}">
+
+        <label for = "name"> Name:</label>
+        <input type="text" name="name">
+
+       <label for ="birth_date"> Birth date:</label>
+        <input type="text" date="birth_date">
+
+        <label for = "username">Username:</label>
+        <input type="text" username="username">
+
+        <label for ="password">Password:</label>
+        <input type="password" password="password">
+
+        <input type="submit" value="Sign Up">
+
+    </form>
+
 </body>
 </html>
