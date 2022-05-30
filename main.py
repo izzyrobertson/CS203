@@ -29,5 +29,10 @@ def menu():
     return render_template('menu.html')
 
 
+@app.route("/addplant")
+def addplant():
+    return render_template('addplant.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
