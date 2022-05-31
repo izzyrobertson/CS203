@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <style>
+        body {text-align: center;}
+        img {display: block; margin-left: auto; margin-right: auto;}
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -8,6 +12,27 @@
     <title>Register</title>
 </head>
 <body>
+<img src="static/logo.png" alt="garden_logo"/>
     <h1>Registration</h1>
+<h2>Please enter details in the fields below to create an account</h2>
+
+    <form action="{{ url_for('menu')}}">
+
+        <label for = "name"> Name:</label>
+        <input type="text" name="name"><br><br>
+
+       <label for ="birth_date"> Birth date:</label>
+        <input type="text" date="birth_date"><br><br>
+
+        <label for = "username">Username:</label>
+        <input type="text" username="username"><br><br>
+
+        <label for ="password">Password:</label>
+        <input type="password" password="password"><br><br>
+
+        <input type="submit" value="Sign Up">
+
+    </form>
+
 </body>
 </html>

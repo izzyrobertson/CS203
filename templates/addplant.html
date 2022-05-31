@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        body {text-align:center;}
+        img {display: block; margin-left: auto; margin-right: auto;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Plant</title>
+</head>
+<body>
+<img src="static/logo.png" alt="garden_logo"/>
+    <h1>Add plant</h1>
+    <form action="{{ url_for('menu')}}">
+
+        <label for = "Plant name"> Plant name:</label>
+        <input type="text" name="name"><br><br>
+
+       <label for ="Plant type"> Plant type:</label>
+        <input type="text" date="birth_date"><br><br>
+
+        <label for = "Indoor or Outdoor"> Indoor or Outdoor:</label>
+        <select id="location" name="location">
+            <option value="Indoor">Indoor</option>
+            <option value="Outdoor">Outdoor</option>
+        </select><br><br>
+
+        <label for = "Water frequency"> Water frequency:</label>
+        <select id="frequency" name="frequency">
+            <option value="everyday">Everyday</option>
+            <option value="every other day">Every other day</option>
+            <option value="once a week">Once a week</option>
+        </select><br><br>
+
+        <input type="submit" value="Add Plant">
+
+    </form>
+</body>
+</html>
