@@ -26,20 +26,20 @@
 
     <form action="{{ url_for('menu')}}">
 
-        <label for = "name"> full Name:</label>
+        <label for = "name"> Full Name:</label>
         <input type="text" name="name"><br><br>
 
-       <label for ="birth_date"> Birth date:</label>
-        <input type="text" date="birth_date"><br><br>
+       <label for ="birth_date"> Birth Date:</label>
+        <input type="datetime-local" date="birth_date"><br><br>
 
-        <label for = "username">Username:</label>
+        <label for = "username"> Username:</label>
         <input type="text" username="username"><br><br>
 
-        <label for ="password">Password:</label>
+        <label for ="password"> Password:</label>
         <input type="password" password="password"><br><br>
 
-        <input type="submit" value="Sign Up">
-
+        <a href="{{url_for('login')}}" class = "btn btn-default  btn-outline-success ">Back</a>
+        <input class = "btn btn-default  btn-outline-success " type="submit" value="Sign Up">
     </form>
 
 </body>
