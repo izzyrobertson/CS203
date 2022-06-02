@@ -30,6 +30,7 @@
             {% if error %}
             <p class="error"><strong>Error:</strong>{{error}}
             {% endif %}
+                <a href="{{url_for('home')}}" class = "btn btn-default  btn-outline-success ">Back</a>
             <input class="btn btn-default  btn-outline-success " type="submit" value="Login">
           <br>  <br><a href="{{url_for('register')}}">Create New Account</a><br>
         </form>

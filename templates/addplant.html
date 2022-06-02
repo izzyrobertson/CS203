@@ -7,6 +7,7 @@
         form{text-align: center;}
         h1{text-align: center;}
         h2{text-align: center;}
+        btn{background-color:#ACCB8A;}
     </style>
 
 
@@ -23,7 +24,7 @@
 </head>
 <body>
 <img src="static/logo.png" alt="garden_logo"/>
-    <h1>Add plant</h1><br><br>
+    <h1>Add plant</h1><br>
     <form action="{{ url_for('menu')}}">
 
         <label for = "Plant name"> Plant name:</label>
@@ -45,7 +46,8 @@
             <option value="once a week">Once a week</option>
         </select><br><br>
 
-        <input type="submit" class="btn-default btn-outline-success" value="Add Plant">
+        <a href="{{url_for('home')}}" class = "btn btn-default  btn-outline-success ">Back</a>
+        <input class="btn btn-default  btn-outline-success " type="submit" value="Add Plant">
 
     </form>
 </body>
