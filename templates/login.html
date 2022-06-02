@@ -4,7 +4,15 @@
     <style>
         body {text-align:center;}
         img {display: block; margin-left: auto; margin-right: auto;}
+        form{text-align:center;}
+        h1{text-align:center;}
+        btn{background-color:#ACCB8A;}
     </style>
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -17,13 +25,13 @@
         <h1>Login</h1>
         <br>
         <form action="" method="post">
-            <p>Username <input type="text" placeholder="Username" name="username" value="{{request.form.username}}"></p><br>
-            <p>Password <input type="text" placeholder="Password" name="password" value="{{request.form.password}}"></p><br>
+  <p>Username <input type="text" placeholder="Username" name="username" value="{{request.form.username}}"></p><br>
+            <p>Password <input type="password" placeholder="Password" name="password" value="{{request.form.password}}"></p><br>
             {% if error %}
             <p class="error"><strong>Error:</strong>{{error}}
-            {% endif %}<br><br>
-            <input class="btn btn-default" type="submit" value="Login">
-            <a href="{{url_for('register')}}">Create New Account</a><br>
+            {% endif %}
+            <input class="btn btn-default  btn-outline-success " type="submit" value="Login">
+          <br>  <br><a href="{{url_for('register')}}">Create New Account</a><br>
         </form>
     </div>
 </body>
