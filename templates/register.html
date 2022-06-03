@@ -24,7 +24,7 @@
     <h1>Registration</h1><br><br>
 
 
-    <form action="{{ url_for('menu')}}">
+    <form action="{{ url_for('login')}}">
 
         <label for = "name"> Full Name:</label>
         <input type="text" name="name"><br><br>
@@ -38,7 +38,7 @@
         <label for ="password"> Password:</label>
         <input type="password" password="password"><br><br>
 
-        <a href="{{url_for('login')}}" class = "btn btn-default  btn-outline-success ">Back</a>
+        <a href="{{url_for('home')}}" class = "btn btn-default  btn-outline-success ">Back</a>
         <input class = "btn btn-default  btn-outline-success " type="submit" value="Sign Up">
     </form>
 
