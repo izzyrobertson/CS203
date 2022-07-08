@@ -2,37 +2,33 @@
 <html lang="en">
 <head>
 
-<style>
+    <style>
         body {text-align:center;}
         img {display: block; margin-left: auto; margin-right: auto;}
         form{text-align: center;}
         h1{text-align: center;}
         h2{text-align: center;}
         .btn{text-align: center;}
-
     </style>
 
-
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
- <img src="static/logo.png" alt="garden_logo"/><br>
-
-
+    <img src="static/logo.png" alt="garden_logo"/><br>
 
 </head>
+
 <body>
     <h1>CS203</h1><br>
-
-   <p class="text-center"><a href="{{url_for('login')}}"> <button type="button" class="btn large btn-outline-success">Login</button>    </a></p> <br>
-    <p class="text-center"><a href="{{url_for('register')}}"><button type="button" class="btn large btn-outline-success">Registration page</button></a> </p> <br>
-   <p class="text-center"><a href="{{url_for('menu')}}"><button type="button" class="btn large btn-outline-success">User menu page</button></a>   </p> <br>
-     <p class="text-center"><a href="{{url_for('addplant')}}"><button type="button" class="btn large btn-outline-success" > Add plant page</button></a></p> <br>
+    <p class="text-center"><a href="{{url_for('login')}}"> <button type="button" class="btn large btn-outline-success">Login</button></a></p> <br>
+    <p class="text-center"><a href="{{url_for('register')}}"><button type="button" class="btn large btn-outline-success">Registration page</button></a></p><br>
+    <p class="text-center"><a href="{{url_for('menu')}}"><button type="button" class="btn large btn-outline-success">User menu page</button></a></p><br>
+    <p class="text-center"><a href="{{url_for('addplant')}}"><button type="button" class="btn large btn-outline-success" > Add plant page</button></a></p><br>
 </body>
+
 </html>

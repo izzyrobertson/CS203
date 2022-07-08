@@ -17,35 +17,37 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Add Plant</title>
-
+    <title>Update plant</title>
 </head>
+
 <body>
-    <img src="static/logo.png" alt="garden_logo"/>
-    <h1>Add plant</h1><br>
+    <img src="/static/logo.png" alt="garden_logo"/>
+    <h1>Update plant</h1><br>
     <div class ="container">
-        <form action="/addplant", METHOD="POST">
+        <form action="/update/{{plant_to_update.id}}", METHOD="POST">
             <label for = "Plant name"> Plant name:</label>
-            <input type="text" name="name"><br><br>
+            <input type="text" name="name" value="{{plant_to_update.name}}"><br><br>
 
             <label for ="Plant type"> Plant type:</label>
-            <input type="text" name="type"><br><br>
+            <input type="text" name="type" value="{{plant_to_update.type}}"><br><br>
 
             <label for = "Indoor or Outdoor"> Indoor or Outdoor:</label>
             <select id="location" name="location">
+                <option>{{plant_to_update.location}}</option>
                 <option value="Indoor">Indoor</option>
                 <option value="Outdoor">Outdoor</option>
             </select><br><br>
 
             <label for = "Water frequency"> Water frequency:</label>
             <select id="frequency" name="frequency">
+                <option>{{plant_to_update.frequency}}</option>
                 <option value="everyday">Everyday</option>
                 <option value="every other day">Every other day</option>
                 <option value="once a week">Once a week</option>
             </select><br><br>
 
             <a href="{{url_for('myplants')}}" class = "btn btn-default  btn-outline-success ">Back</a>
-            <input class="btn btn-default  btn-outline-success " type="submit" value="Add Plant">
+            <input class="btn btn-default  btn-outline-success " type="submit" value="Update Plant">
         </form>
     </div>
 </body>
